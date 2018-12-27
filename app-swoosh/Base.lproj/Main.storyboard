@@ -166,10 +166,12 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z02-Eo-cAU" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z02-Eo-cAU" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="597" width="375" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.43327268839999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ABL-iE-4WH"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -192,6 +194,9 @@
                             <constraint firstItem="uXs-Tx-3Rv" firstAttribute="leading" secondItem="Ybe-Lo-es1" secondAttribute="leading" constant="20" id="3DE-T9-lGa"/>
                             <constraint firstItem="kO6-Jo-xYN" firstAttribute="bottom" secondItem="Ybe-Lo-es1" secondAttribute="bottom" id="3GB-e4-yPR"/>
                             <constraint firstItem="kO6-Jo-xYN" firstAttribute="leading" secondItem="Ybe-Lo-es1" secondAttribute="leading" id="BqM-yR-mc3"/>
+                            <constraint firstItem="Z02-Eo-cAU" firstAttribute="leading" secondItem="Ybe-Lo-es1" secondAttribute="leading" id="Ci6-rK-n6d"/>
+                            <constraint firstItem="Ybe-Lo-es1" firstAttribute="bottom" secondItem="Z02-Eo-cAU" secondAttribute="bottom" constant="20" id="ES1-Zz-eXT"/>
+                            <constraint firstItem="Z02-Eo-cAU" firstAttribute="trailing" secondItem="Ybe-Lo-es1" secondAttribute="trailing" id="Epf-8L-WLp"/>
                             <constraint firstItem="WX0-U8-jht" firstAttribute="top" secondItem="Ybe-Lo-es1" secondAttribute="top" constant="20" id="IV9-og-LYK"/>
                             <constraint firstItem="uXs-Tx-3Rv" firstAttribute="top" secondItem="WX0-U8-jht" secondAttribute="bottom" constant="60" id="MAQ-rT-7OP"/>
                             <constraint firstItem="kO6-Jo-xYN" firstAttribute="trailing" secondItem="Ybe-Lo-es1" secondAttribute="trailing" id="npd-V3-aBE"/>
@@ -224,8 +229,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9m-79-uA7" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="611" width="375" height="36"/>
+                                <rect key="frame" x="0.0" y="597" width="375" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.43327268839999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2Fl-95-Q8z"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                 <state key="normal" title="FINISH">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -283,12 +291,15 @@
                         <constraints>
                             <constraint firstItem="z9m-79-uA7" firstAttribute="trailing" secondItem="eyc-GV-P1h" secondAttribute="trailing" id="0gp-E0-Wrg"/>
                             <constraint firstItem="M4x-4b-Hre" firstAttribute="trailing" secondItem="eyc-GV-P1h" secondAttribute="trailing" id="6BH-F1-EmE"/>
+                            <constraint firstItem="z9m-79-uA7" firstAttribute="leading" secondItem="eyc-GV-P1h" secondAttribute="leading" id="GNm-ju-XeU"/>
                             <constraint firstItem="M4x-4b-Hre" firstAttribute="leading" secondItem="eyc-GV-P1h" secondAttribute="leading" id="L7b-Cx-Sia"/>
                             <constraint firstItem="iX0-a3-2d0" firstAttribute="leading" secondItem="eyc-GV-P1h" secondAttribute="leading" constant="20" id="MIy-qu-bwT"/>
                             <constraint firstItem="M4x-4b-Hre" firstAttribute="top" secondItem="Fha-gA-8w1" secondAttribute="top" id="OWV-BM-yoO"/>
                             <constraint firstItem="eyc-GV-P1h" firstAttribute="bottom" secondItem="z9m-79-uA7" secondAttribute="bottom" constant="20" id="Oga-GS-neE"/>
+                            <constraint firstItem="eyc-GV-P1h" firstAttribute="bottom" secondItem="z9m-79-uA7" secondAttribute="bottom" constant="20" id="RV0-hi-g71"/>
                             <constraint firstItem="M4x-4b-Hre" firstAttribute="bottom" secondItem="eyc-GV-P1h" secondAttribute="bottom" id="gTt-9W-7T0"/>
                             <constraint firstItem="z9m-79-uA7" firstAttribute="leading" secondItem="eyc-GV-P1h" secondAttribute="leading" id="gWH-vt-cbl"/>
+                            <constraint firstItem="z9m-79-uA7" firstAttribute="trailing" secondItem="eyc-GV-P1h" secondAttribute="trailing" id="jfF-Vr-syF"/>
                             <constraint firstItem="5As-Sj-ymm" firstAttribute="centerX" secondItem="Fha-gA-8w1" secondAttribute="centerX" id="jxg-Ba-ZvG"/>
                             <constraint firstItem="iX0-a3-2d0" firstAttribute="top" secondItem="5As-Sj-ymm" secondAttribute="top" constant="125" id="keB-a6-RJd"/>
                             <constraint firstItem="eyc-GV-P1h" firstAttribute="trailing" secondItem="iX0-a3-2d0" secondAttribute="trailing" constant="20" id="vlp-ue-PQA"/>
